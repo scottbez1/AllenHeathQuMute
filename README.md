@@ -1,0 +1,3 @@
+Small wifi widget for remotely controlling a single mute group on an Allen&Heath Qu Mixer (e.g. Qu-16 or Qu-24). Connects to the mixer over the Qu's MIDI-over-TCP protocol and regularly queries for system status to get the current mute status (sent as a Note-On message). Pressing the Mute or Unmute button sends the Note-On/Off messages and then queries for an updated system status. LEDs indicate wifi connection status, mixer connection status, and mute/unmute status.
+
+The ESP8266 also runs a soft AP to allow for future configuration of the device, but this isn't fully integrated yet so many parameters (wifi SSID, mixer IP address, mute group to control, etc) are hardcoded.
